@@ -1,12 +1,12 @@
 {
   "name": "agent-batch-reviewer",
   "version": "0.0.0",
-  "description": "Skill that orchestrates parallel subagents to review a batch of open PRs or tickets across one or more projects, fanning out the review work and collecting structured findings.",
+  "description": "Reviews multiple open pull requests of a project in parallel. The batch-reviewer skill fans out one Codex-backed pr-reviewer subagent per PR — each in its own isolated worktree — and every reviewer posts its own verdict as a PR review comment; the orchestrator aggregates a batch report. Engages only for multi-PR batches, deferring single-PR/diff review to /review and /code-review.",
   "author": { "name": "Arne von Appen" },
   "repository": "https://github.com/Seretos/agent-batch-reviewer",
   "skills": "./skills",
   "interface": {
     "displayName": "Agent Batch Reviewer",
-    "shortDescription": "Skill that orchestrates parallel subagents to review a batch of open PRs or tickets across one or more projects, fanning out the review work and collecting structured findings."
+    "shortDescription": "Reviews multiple open pull requests of a project in parallel — one Codex-backed reviewer subagent per PR, each posting its own verdict."
   }
 }

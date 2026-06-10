@@ -73,6 +73,9 @@ jobs:
           cp .claude-plugin/plugin.json "$STAGE/.claude-plugin/"
           cp .codex-plugin/plugin.json  "$STAGE/.codex-plugin/"
           cp -a skills/. "$STAGE/skills/"
+          # agents/ ships the pr-reviewer subagent the batch-reviewer skill
+          # fans out; without it the skill spawns an undefined subagent type.
+          [ -d agents ] && { mkdir -p "$STAGE/agents"; cp -a agents/. "$STAGE/agents/"; } || true
           cp README.md "$STAGE/"
           cp LICENSE "$STAGE/" 2>/dev/null || true
           # assets/ goes onto the orphan release branch so the dispatch
