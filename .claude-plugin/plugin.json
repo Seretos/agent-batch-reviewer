@@ -1,0 +1,7 @@
+{
+  "name": "agent-batch-reviewer",
+  "description": "Skill that orchestrates parallel subagents to review a batch of open PRs or tickets across one or more projects, fanning out the review work and collecting structured findings.",
+  "version": "0.0.0",
+  "author": { "name": "Arne von Appen" },
+  "dependencies": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "agent-batch-reviewer",
+  "version": "0.0.0",
+  "description": "Skill that orchestrates parallel subagents to review a batch of open PRs or tickets across one or more projects, fanning out the review work and collecting structured findings.",
+  "author": { "name": "Arne von Appen" },
+  "repository": "https://github.com/Seretos/agent-batch-reviewer",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Agent Batch Reviewer",
+    "shortDescription": "Skill that orchestrates parallel subagents to review a batch of open PRs or tickets across one or more projects, fanning out the review work and collecting structured findings."
+  }
+}
