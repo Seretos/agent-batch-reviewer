@@ -39,7 +39,7 @@ say so**: there is no batch to parallelise, and a single PR should go through
 ## Inputs
 
 - A **project id** (e.g. `acme-api`). If missing or unclear, resolve it via
-  `find_projects` / `list_projects` and confirm with the user before anything
+  `search_projects` / `list_projects` and confirm with the user before anything
   else. Thread it into every project-issues call and every subagent prompt —
   never hardcode a project.
 - An optional **PR selection**: nothing → all open PRs; an explicit list of
