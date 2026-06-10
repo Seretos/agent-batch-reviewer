@@ -1,0 +1,14 @@
+{
+  "name": "agent-batch-reviewer",
+  "description": "Reviews multiple open pull requests of a project in parallel. The batch-reviewer skill fans out one Codex-backed pr-reviewer subagent per PR — each in its own isolated worktree — and every reviewer posts its own verdict as a PR review comment; the orchestrator aggregates a batch report. Engages only for multi-PR batches, deferring single-PR/diff review to /review and /code-review. Drives the agent-project-issues MCP and the Codex plugin.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Arne von Appen"
+  },
+  "dependencies": [
+    {
+      "name": "agent-project-issues",
+      "version": ">=0.0.1 <1.0.0"
+    }
+  ]
+}
